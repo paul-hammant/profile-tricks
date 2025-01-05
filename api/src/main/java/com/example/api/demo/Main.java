@@ -22,6 +22,7 @@ public class Main {
             myThing = new NullObjectMyThing();
         }
 
+        System.out.println("Test `" + Thread.currentThread().getStackTrace()[2].getClassName() + "` calling `" + Main.class.getName() + "` intending to call <impl of> MyThing.processIntervention():");
         myThing.processIntervention();
 
     }
