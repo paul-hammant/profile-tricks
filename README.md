@@ -1,4 +1,4 @@
-# MyThing Project
+# Demo of a set of Maven deps that can swap a NullObject implementation for a missing JNI (rust) real impl of a thing 
 
 This project is a Java-based application that demonstrates the use of the NullObject pattern and native implementation of a hypothetical API.
 
