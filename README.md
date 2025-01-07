@@ -5,6 +5,11 @@ This project is a Java-based application that demonstrates the use of the NullOb
 - **api**: Contains the core interfaces and classes, including the `MyThing` interface and its `NullObjectMyThing` fallback implementation.
 - **native-implementation**: Contains the `NativeMyThing` implementation class of `MyThing` type, which is a native Rust implementation of the `MyThing` interface accessed via JNI.
 
+Also important:
+
+1. Api jar/module **does not** depend on native-implementation jar/module for compilation or execution/use in the JVM
+2. native-implementation jar/module **does** depend on api jar/module for compilation and execution/use in the JVM
+
 Prerequisites: Cargo and Maven build systems
 
 ```bash
