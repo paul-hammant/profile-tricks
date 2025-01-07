@@ -24,6 +24,9 @@ NullObjectMyThing.processIntervention() has been called [Java]
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.739 sec
 ```
 
+Classpath at the time of this test execution will be api.jar only.
+
+
 NativeImpl's test output to console:
 
 ```
@@ -31,5 +34,7 @@ Test `com.example.nativeimpl.MainTest` calling `com.example.api.demo.Main` inten
 NativeMyThing.processIntervention() has been called [Rust]
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.109 sec
 ```
+
+Classpath at the time of this test execution will be api.jar **and native-implementation.jar**
 
 That's the same main() class in the API codebase using reflection to attempt to load `NativeMyThing` in preference to `NullObjectMyThing`.  The tests are carbon copies of each other.`
